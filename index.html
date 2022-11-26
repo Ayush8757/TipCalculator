@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="heading">
+        <img src="assets/logo.svg" alt="logo">
+    </div>
+    <div class="container">
+        <div class="left">
+            <form action="">
+                <div class="bill">
+                    <label for="" class="labelView">Bill</label><br>
+                    <input type="number" name="Amount" id="Amount" placeholder="0">
+                    <img src="assets/icon-dollar.svg" alt="" class="icon">
+                </div>
+                <div class="btnsGrid">
+                    <label for="" class="labelView">Select Tip %</label><br>
+                    <div class="rowOne">
+                        <input type="button" value="5%" class="btns">
+                        <input type="button" value="10%" class="btns">
+                        <input type="button" value="15%" class="btns">
+                    </div>
+                    <div class="rowTwo">
+                        <input type="button" value="25%" class="btns">
+                        <input type="button" value="50%" class="btns">
+                        <input type="number" name="custom" id="customAmount" placeholder="Custom">
+                    </div>
+                </div>
+                <div class="NOP">
+                    <label for="" class="labelView">Number Of People</label><br>
+                    <input type="number" name="nop" id="NumberOfPeople" placeholder="0">
+                    <img src="assets/icon-person.svg" alt=""  class="icon">
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <div class="TipAmount">
+                <div class="inputData">
+                    <p class="subhead">Tip Amount</p>
+                    <p class="subpara">/ person</p> 
+                </div> 
+                <div class="currency">
+                    <p id="tipAmount" >$0.00</p>
+                </div>
+             </div>
+            <div class="Total">
+                <div class="inputData">
+                    <p class="subhead">Total</p>
+                    <p class="subpara">/ person</p>
+                </div>
+                <div class="currency">
+                    <p id="totalAmount">$0.00</p> 
+                </div>
+            </div>
+            <button id="Reset">RESET</button>
+        </div>
+    </div>
+</body>
+</html>

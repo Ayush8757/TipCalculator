@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --Strongcyan: hsl(172, 67%, 45%);
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Grayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Verylightgrayishcyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Lightgrayishcyan);
+}
+
+.heading{
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: -60px;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 0px rgb(177, 177, 177);
+    width: 680px;
+    height: 350px;
+}
+
+.container .left{
+    border-radius: 12px;
+    padding: 15px;
+    width: 50%;
+}
+
+.container .right{
+    border-radius: 12px;
+    padding: 35px 35px;
+    width: 50%;
+    background-color: var(--Verydarkcyan);
+}
+
+.left .labelView{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--Darkgrayishcyan);
+    margin-bottom: 10px;
+}
+
+.left .bill{
+    position: relative;
+}
+
+.left .NOP{
+    position: relative;
+}
+
+.left .icon{
+    position: absolute;
+    top: 32px;
+    left: 12px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+#Amount{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: end;
+    padding: 4px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: var(--Verylightgrayishcyan);
+    outline: none;
+    border: transparent;
+    margin-bottom: 24px;
+}
+
+#Amount:hover{
+    outline: 2px solid var(--Strongcyan);
+}
+
+#Amount:focus{
+    outline: 2px solid var(--Strongcyan);
+}
+
+#NumberOfPeople{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: end;
+    padding: 4px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: var(--Verylightgrayishcyan);
+    outline: none;
+    border: none;
+}
+
+#NumberOfPeople:hover{
+    outline: 2px solid var(--Strongcyan);
+}
+
+#NumberOfPeople:focus{
+    outline: 2px solid var(--Strongcyan);
+}
+
+.left .btns{
+    padding: 5px 10px;
+    width: 29%;
+    margin: 5px 0px;
+    background-color: var(--Verydarkcyan);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.left .btns:hover{
+    background-color: var(--Lightgrayishcyan);
+    color: var(--Verydarkcyan);
+}
+
+.left .rowOne{
+    margin-top: 5px;
+}
+
+#customAmount {
+    text-align: end;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 4px;
+    width: 29%;
+    margin: 5px 0px;
+    border-radius: 5px;
+    background-color: var(--Verylightgrayishcyan);
+    outline: none;
+    border: transparent;
+}
+
+#customAmount:hover{
+    outline: 2px solid var(--Strongcyan);
+}
+
+#customAmount:focus{
+    outline: 2px solid var(--Strongcyan);
+}
+
+.left .rowTwo{
+    margin-bottom: 24px;
+}
+
+.right .subhead{
+   color: white;
+   font-size: 12px;
+}
+
+.right .subpara{
+    font-size: 10px;
+    color:hsl(184, 14%, 56%);
+}
+
+.right .TipAmount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.right .Total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right .inputData{
+    display: flex;
+    flex-direction: column;
+}
+
+#tipAmount{
+    margin-top: 0px;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--Strongcyan);
+}
+
+#totalAmount{
+    margin-top: 0px;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--Strongcyan);
+}
+
+
+#Reset {
+    background-color: hsla(172, 67%, 45%, 0.244);
+    color: var(--Verydarkcyan);
+    border:none;
+    margin-top: 95px;
+    border-radius: 5px;
+    padding: 7px 10px;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#Reset:hover{
+    background-color: var(--Lightgrayishcyan);
+}
